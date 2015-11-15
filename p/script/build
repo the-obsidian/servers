@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+. "$(dirname $0)/lib/common"
+
+# Process templates
+while IFS= read -r -d '' src
+do
+  dst="$(echo $src | sed s/\.tmpl\./\./g)"
+  perl -p -e 's/\$\{([^}:]+)(:([^}:]+))?\}/defined $ENV{$1} ? $ENV{$1} : $3/eg' $src > $dst
+done <  <(find -H "$ROOT_DIR" -name '*.tmpl.*' -print0)

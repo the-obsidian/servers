@@ -1,0 +1,26 @@
+# Ignore temporary folders
+.tmp/
+
+# Generally ignore all JARs
+*.jar
+
+# Ignore the server.jar (it will be symlinked in)
+server.jar
+
+# Ignore private .env file
+.env
+
+# Ignore world folders
+world/
+world_nether/
+world_the_end/
+
+# Ignore log files
+*.log
+*.log.gz
+
+# Ignore usercache.json
+usercache.json
+
+# Ignore templated files
+server.properties

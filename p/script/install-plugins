@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -e
+
+. "$(dirname $0)/lib/common"
+
+mkdir -p .tmp/plugins
+
+cat PluginRequirements | grep "^plugin" | while read -r line || [[ -n "$line" ]]; do
+  name="$(echo $line | awk '{print $2}')"
+  existing_hash="nope"
+  wanted_hash="$(echo $line | awk '{print $3}')"
+  url="$(echo $line | awk '{print $4}')"
+  tmp=".tmp/plugins/$name.jar"
+  dest="plugins/$name.jar"
+
+  if [ -f $dest ]; then
+    existing_hash="$(sha1sum $dest | awk '{print $1}')"
+  fi
+
+  echo "[$name] Downloading from $url"
+  curl -o $tmp -L --silent $url
+
+  got_hash="$(sha1sum $tmp | awk '{print $1}')"
+
+  if [[ "$wanted_hash" != "$got_hash" ]]; then
+    echo "[$name] Error! Expecting hash $wanted_hash but got $got_hash"
+    exit 1
+  else
+    if [[ "$existing_hash" == "$got_hash" ]]; then
+      rm $tmp
+      echo "[$name] Already up to date - skipping"
+    else
+      mv $tmp $dest
+      echo "[$name] Installed to $dest"
+    fi
+  fi
+done

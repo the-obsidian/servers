@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+. ./script/lib/common
+
+world_names="world world_nether world_the_end"
+
+for world in $world_names; do
+  script/setup-world $world
+done
+
+. script/build

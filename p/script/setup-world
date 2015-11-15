@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+ROOT_DIR="$(dirname $0)/.."
+
+cd $ROOT_DIR || exit 1
+
+world=$1
+
+mkdir -p worldstorage
+
+if [ ! -L $world ] && [ -d $world ]; then
+  mv $world worldstorage/
+fi
+
+if [ ! -L $world ]; then
+  ln -sf $ROOT_DIR/worldstorage/$world $world
+fi
