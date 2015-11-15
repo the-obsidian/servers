@@ -12,6 +12,8 @@ if [ ! -L $world ] && [ -d $world ]; then
   mv $world worldstorage/
 fi
 
+mkdir -p worldstorage/$world
+
 if [ ! -L $world ]; then
   ln -sf $ROOT_DIR/worldstorage/$world $world
 fi
