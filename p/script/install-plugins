@@ -14,13 +14,13 @@ cat PluginRequirements | grep "^plugin" | while read -r line || [[ -n "$line" ]]
   dest="plugins/$name.jar"
 
   if [ -f $dest ]; then
-    existing_hash="$(sha1sum $dest | awk '{print $1}')"
+    existing_hash="$(shasum $dest | awk '{print $1}')"
   fi
 
   echo "[$name] Downloading from $url"
   curl -o $tmp -L --silent $url
 
-  got_hash="$(sha1sum $tmp | awk '{print $1}')"
+  got_hash="$(shasum $tmp | awk '{print $1}')"
 
   if [[ "$wanted_hash" != "$got_hash" ]]; then
     echo "[$name] Error! Expecting hash $wanted_hash but got $got_hash"
