@@ -1,0 +1,7 @@
+# Ignore world folders
+/world
+/world_nether
+/world_the_end
+/worldstorage/world
+/worldstorage/world_nether
+/worldstorage/world_the_end

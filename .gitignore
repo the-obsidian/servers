@@ -10,11 +10,6 @@ server.jar
 # Ignore private .env file
 .env
 
-# Ignore world folders
-world
-world_nether
-world_the_end
-
 # Ignore log files
 *.log
 *.log.gz
