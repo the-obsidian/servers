@@ -19,3 +19,9 @@ usercache.json
 
 # Ignore templated files
 server.properties
+
+# Ignore crash reports
+crash-reports/
+
+# Ignore databases
+*.sqlite
