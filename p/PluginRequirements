@@ -1,5 +1,6 @@
 # This file describes the plugins to install and where to fetch them
-# The format is "plugin NAME SHA URL"
+# The format is "plugin NAME SHA URL [FILE]"
+# FILE is specified if the download is a zip
 
 # Position tracking for the live user map
 plugin PlayerPositions 5e299681fe89b1cea1b97b11cc62ceb3288771cd https://github.com/the-obsidian/PlayerPositions/releases/download/v1.0.0/PlayerPositions-1.0.0.jar
