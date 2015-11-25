@@ -1,0 +1,14 @@
+settings:
+  server-id: '${DISCORD_SERVER_ID}'
+  channel: '${DISCORD_CHANNEL}'
+  username: '${DISCORD_USERNAME}'
+  email: '${DISCORD_EMAIL}'
+  password: '${DISCORD_PASSWORD}'
+  debug: false
+  templates:
+    discord:
+      chat_message: '<%u> %m'
+      player_join: '%u joined the server'
+      player_leave: '%u left the server'
+    minecraft:
+      chat_message: '<%u&b(discord)&r> %m'

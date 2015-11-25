@@ -8,6 +8,11 @@ plugins:
   # Custom Plugins #
   ##################
 
+  # Bridges chat between Minecraft and Discord
+  - name: DiscordBridge
+    uri: https://github.com/the-obsidian/DiscordBridge/releases/download/v1.3.0/DiscordBridge-1.3.0.jar
+    sha: d9c94135c866fa3fcb30ac8533acee3937238f5e
+
   # Writes player positions to a JSON file for the dynamic map
   - name: PlayerPositions
     uri: https://github.com/the-obsidian/PlayerPositions/releases/download/v1.0.0/PlayerPositions-1.0.0.jar
