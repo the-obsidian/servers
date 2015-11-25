@@ -1,0 +1,20 @@
+runtime:
+  min-memory: 1g
+  max-memory: 4g
+
+plugins:
+  - name: PlayerPositions
+    uri: https://github.com/the-obsidian/PlayerPositions/releases/download/v1.0.0/PlayerPositions-1.0.0.jar
+    sha: 5e299681fe89b1cea1b97b11cc62ceb3288771cd
+  - name: CommandHelper
+    uri: http://builds.enginehub.org/job/commandhelper/8185/download/commandhelper-3.3.1-SNAPSHOT.jar
+    sha: 19295ae53024ffe0ef934c83fbaf87db18a5f537
+  - name: WorldEdit
+    uri: http://builds.enginehub.org/job/worldedit/8166/download/worldedit-bukkit-6.1.1-SNAPSHOT-dist.jar
+    sha: 480b9a5490443bc27a70ea2a2723b6fde9e1f92a
+  - name: WorldGuard
+    uri: http://builds.enginehub.org/job/worldguard/8032/download/worldguard-6.1.1-SNAPSHOT.zip
+    sha: 52c59395baabbbbf9806bd60faded1356017392c
+    processors:
+      - type: unzip
+        file: worldguard-6.1.1-SNAPSHOT.jar
