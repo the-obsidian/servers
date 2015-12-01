@@ -7,6 +7,9 @@
 # Ignore the server.jar (it will be symlinked in)
 server.jar
 
+# Ignore databases
+*.db
+
 # Ignore private .env file
 .env
 
