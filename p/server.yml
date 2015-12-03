@@ -23,6 +23,11 @@ plugins:
     uri: https://github.com/the-obsidian/PlayerPositions/releases/download/v1.0.0/PlayerPositions-1.0.0.jar
     sha: 5e299681fe89b1cea1b97b11cc62ceb3288771cd
 
+  # Syncs groups between Discourse and Minecraft
+  - name: DiscourseGroupSync
+    uri: https://github.com/the-obsidian/DiscourseGroupSync/releases/download/v1.0.1/DiscourseGroupSync-1.0.1.jar
+    sha: 148cb963527696220846136652acf5d2f9d757b4
+
   ###################
   # Utility Plugins #
   ###################

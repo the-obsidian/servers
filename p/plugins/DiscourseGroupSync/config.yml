@@ -1,0 +1,18 @@
+# The URL of your Discourse installation (without the trailing slash)
+discourse-url: https://forum.the-obsidian.com
+groups:
+- discourse: 0
+  minecraft: guest
+- discourse: 45
+  minecraft: guest
+  remove: true
+- discourse: 45
+  minecraft: member
+- discourse: -45
+  minecraft: member
+  remove: true
+- discourse: 42
+  minecraft: admin
+- discourse: -42
+  minecraft: admin
+  remove: true
