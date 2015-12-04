@@ -1,11 +1,8 @@
 groups:
-- name: guest
-  rank: 0
-  display_name: '&6[Guest] &f%p'
 - name: member
   display_name: '%p'
   permissions:
-  - modifyworld.*
+  - obsidian.join
 - name: moderator
   rank: 100
   display_name: '&3[M] &f%p'

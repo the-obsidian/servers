@@ -32,11 +32,6 @@ plugins:
   # Utility Plugins #
   ###################
 
-  # Restricts build access
-  - name: ModifyWorld
-    uri: http://dev.bukkit.org/media/files/730/259/Modifyworld.jar
-    sha: 7283daa11ac55484a156f55793baa4e15d15de30
-
   # Provides connectivity between plugins
   - name: Vault
     uri: http://dev.bukkit.org/media/files/894/359/Vault.jar
