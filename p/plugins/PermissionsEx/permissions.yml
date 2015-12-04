@@ -1,0 +1,40 @@
+groups:
+  default:
+    options:
+      default: true
+  member:
+    permissions:
+    - obsidian.group.member
+    - obsidian.join
+  guardian:
+    inheritance:
+    - member
+    options:
+      prefix: '&2[Guardian]&f '
+    permissions:
+    - obsidian.group.guardian
+  moderator:
+    inheritance:
+    - guardian
+    options:
+      prefix: '&6[Mod]&f '
+    permissions:
+    - obsidian.group.moderator
+  admin:
+    inheritance:
+    - moderator
+    options:
+      prefix: '&3[Admin]&f '
+    permissions:
+    - obsidian.group.admin
+    - worldedit.*
+schema-version: 1
+users:
+  d52a5ab5-ead4-4dc6-9025-d8d0785d9a78:
+    worlds:
+      world:
+        group:
+        - admin
+        - member
+    options:
+      name: jacobwg
