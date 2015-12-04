@@ -1,0 +1,25 @@
+/help = >>>
+  msg(colorize('&9Need help? Visit &3https://obsidian.gg/help'))
+<<<
+
+*:/rules = >>>
+  msg(colorize('&9Please see the website for the guidelines: &3https://obsidian.gg/rules'))
+<<<
+
+*:/vote = >>>
+  msg(colorize('&6VOTE: &fHelp support the server!  Vote for us here:'))
+  msg(colorize('&7- &3http://minecraftservers.org/server/237389'))
+  msg(colorize('&7- &3http://www.minestatus.net/132032-the-obsidian'))
+  msg(colorize('&7- &3http://www.mineservers.net/servers/5976'))
+  msg(colorize('&7- &3http://www.planetminecraft.com/server/the-obsidian/'))
+<<<
+
+*:/map [$] = >>>
+  msg(colorize('&9You can find the map at &3https://map.obsidian.gg'))
+<<<
+
+*:/discord [$] = >>>
+  msg(colorize('&9Join our Discord group at &3https://discord.gg/0acj9DyVWhPTJSLX'))
+<<<
+
+*:/ping = msg(concat(color(gray), 'Pong!'))
