@@ -1,0 +1,2 @@
+# Alias /tell as /msg
+/msg [$] = /tell $
