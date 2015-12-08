@@ -72,7 +72,7 @@ fire:
     lava-spread-blocks: []
 mobs:
     block-creeper-explosions: false
-    block-creeper-block-damage: false
+    block-creeper-block-damage: true
     block-wither-explosions: false
     block-wither-block-damage: false
     block-wither-skull-explosions: false
