@@ -32,6 +32,11 @@ plugins:
     uri: http://dev.bukkit.org/media/files/882/992/PermissionsEx-1.23.3.jar
     sha: b5727097d85dc2a7a501928c6c7113e9d37d25fe
 
+  # Block logging
+  - name: LogBlock
+    uri: http://dev.bukkit.org/media/files/891/223/LogBlock.jar
+    sha: eefb87fe9e44d9fd8672d9f3ddd8572c0775267e
+
   # Provides connectivity between plugins
   - name: Vault
     uri: http://dev.bukkit.org/media/files/894/359/Vault.jar
