@@ -1,18 +1,23 @@
 # The URL of your Discourse installation (without the trailing slash)
 discourse-url: https://forum.the-obsidian.com
+
+# Whitelist denied message
+kick-message: You are not on the whitelist, please join at obsidian.gg/whitelist
+
+# Group mappings
 groups:
-- discourse: 0
-  minecraft: guest
-- discourse: 45
-  minecraft: guest
-  remove: true
+
 - discourse: 45
   minecraft: member
+  whitelist: true
+
 - discourse: -45
   minecraft: member
   remove: true
+
 - discourse: 42
   minecraft: admin
+
 - discourse: -42
   minecraft: admin
   remove: true

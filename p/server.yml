@@ -20,8 +20,8 @@ plugins:
 
   # Syncs groups between Discourse and Minecraft
   - name: DiscourseGroupSync
-    uri: https://github.com/the-obsidian/DiscourseGroupSync/releases/download/v1.1.0/DiscourseGroupSync-1.1.0.jar
-    sha: e9539b4fb93aa7cebe2392e6b6c59bc1e85868d9
+    uri: https://github.com/the-obsidian/DiscourseGroupSync/releases/download/v1.1.2/DiscourseGroupSync-1.1.2.jar
+    sha: 085df87b7522e9b49cb5b8f27ac4a44c56683a97
 
   ###################
   # Utility Plugins #
