@@ -21,7 +21,12 @@ plugins:
   # Syncs groups between Discourse and Minecraft
   - name: DiscourseGroupSync
     uri: https://github.com/the-obsidian/DiscourseGroupSync/releases/download/v1.1.2/DiscourseGroupSync-1.1.2.jar
-    sha: 085df87b7522e9b49cb5b8f27ac4a44c56683a97
+    sha: eb2859f37fff1a0b19544d3823b8ec0fa9134415
+
+  # Limits mobs per chunk
+  - name: MobControl
+    uri: https://github.com/the-obsidian/MobControl/releases/download/v1.1.0/MobControl-1.1.0.jar
+    sha: c3a1bc9bab99a28ab282560c59dc5d8bbebfaf58
 
   ###################
   # Utility Plugins #
